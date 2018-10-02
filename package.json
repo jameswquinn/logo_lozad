@@ -19,6 +19,7 @@
     "start:dev": "sirv public --dev"
   },
   "dependencies": {
+    "jump.js": "^1.0.2",
     "lozad": "^1.6.0"
   }
 }

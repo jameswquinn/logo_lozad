@@ -14,11 +14,19 @@
 	import AnimatedLogo from './AnimatedLogo.html';
 	// using ES6 modules
 	import lozad from 'lozad'
+	import jump from 'jump.js'
 	export default {
 		components: { AnimatedLogo },
 		oncreate() {
  		// lazy loads elements with default selector as '.lozad'
 		lozad().observe();
+		jump('.target', {
+  duration: 1000,
+  offset: 0,
+  callback: undefined,
+  easing: easeInOutQuad,
+  a11y: false
+})
 }
 	};
 </script>
